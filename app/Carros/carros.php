@@ -15,27 +15,27 @@ class Carro{
             if($this->recebeArquivos($img)){
                 $this-> mensagem = [
                     "status" => true,
-                    "msg" => "veiculo cadastrado com sucesso"
+                    "msg" => "Veículo cadastrado com sucesso"
                 ];
             }
             else{
                 $this-> mensagem = [
                     "status" => false,
-                    "msg" => "Você precisa enviar uma imagem com formato jpg , png ou webp"
+                    "msg" => "Você precisa enviar uma imagem com formato jpg, png ou webp"
                 ];
             }
            }
            else{
                 $this-> mensagem = [
                 "status" => false,
-                "msg" => "data da locação é anterior à data atual"
+                "msg" => "Data da Locação é anterior à Data Atual"
             ];
            }
         }
             else{
                 $this->mensagem = [
                     "status" => false,
-                    "msg" => "Os campos nao podem ficar em branco"
+                    "msg" => "Os campos não podem ficar em branco"
                 ];
             
         }
@@ -55,7 +55,7 @@ class Carro{
         else{
             return true;
         }
-        echo "O {$this->modelo} é da marca {$this->marca} e seu ano de fabricação é {$this->anoFabricacao} e a devolução é {$this->fimLocacao}";
+        
         //return true;
     }
     public function recebeArquivos($img){
@@ -86,11 +86,18 @@ class Carro{
        
     }
     
-    public function validaData($data){
+    public function validaData($data,$data2){
         $inicioLocacao = new DateTime($data);
+        $fimLocacao = new DateTime($data2);
         $dataAtual = new DateTime('now');
 
-        if($inicioLocacao >= $dataAtual){
+        if($fimLocacao > $dataAtual){
+            return true;
+        }
+        else{
+            return false;
+        }
+        if($fimLocacao > $inicioLocacao){
             return true;
         }
         else{

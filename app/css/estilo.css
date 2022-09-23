@@ -1,5 +1,9 @@
-#bg {background-image: url("../img/390626.jpg");}
-.corTitulo {color: rgb(12, 12, 12); text-shadow: 0 0 10px white;}
+#bg {    background-image: url("../includes/backGround/alugel2.jpg");
+width: 100 px;
+height: 100 px;
+}
+
+.corTitulo {color: white; text-shadow: 0 0 10px blue;}
 .logoImagem{
     width: 80px;
     height: 80px;
@@ -8,3 +12,9 @@
     width: 30px;
     height: 80px;
 }
+.carro{color: floralwhite; text-shadow: 0 0 10px blue;}
+.marca{color: floralwhite; text-shadow: 0 0 10px blue;}
+.anoFab{color: floralwhite; text-shadow: 0 0 10px blue;}
+.dataLoca{color: floralwhite; text-shadow: 0 0 10px blue;}
+.dataDev{color: floralwhite; text-shadow: 0 0 10px blue;}
+.banner{color: floralwhite; text-shadow: 0 0 10px blue;}
