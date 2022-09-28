@@ -1,2 +1,2 @@
 <?php
-header("Location:app/view/cadastroCarro.php");
+header("Location:app/view/visualizarCarro.php");
