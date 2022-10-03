@@ -14,11 +14,12 @@ $meuCarroDAO = new VeiculoDAO();
 
         if($_SESSION["mensagem"]["status"]){
             $meuCarroDAO->inserir($meuCarro);
-            header("Location:../view/visualizarCarro.php");
+            header("Location:../view/cadastroCarro.php"); 
             die();
            }
         else{
-            header("Location:../view/cadastroCarro.php"); 
+            header("Location:../view/visualizarCarro.php");
+            
         }
    
     }

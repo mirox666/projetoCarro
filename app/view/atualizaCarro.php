@@ -21,7 +21,7 @@
             ";
         }
     }
-    unset($_SESSION["mensagem"]); // Destruindo a variável de sessão
+    unset($_SESSION["mensagem"]); 
 
     
     if(!isset($_SESSION['id_veiculo'])){

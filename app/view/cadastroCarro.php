@@ -1,6 +1,5 @@
 <?php
     include_once ("../includes/cabecalho.php");
-        //isset verifica se alguma variável existe
             if(isset($_SESSION["mensagem"])){
                 if($_SESSION["mensagem"]["status"]){
                     echo "
@@ -19,7 +18,7 @@
                     ";
                 }
             }
-            unset($_SESSION["mensagem"]); // Destruindo a variável de sessão
+            unset($_SESSION["mensagem"]); 
         ?>
     <main class="container-fluid mt-5">
         <h1 class="text-center fw-bold corTitulo" >Faça o Cadastro de Alugel do Veículo</h1>
